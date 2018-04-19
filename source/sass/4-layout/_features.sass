@@ -1,0 +1,39 @@
+#features
+  background: #f9f9f9
+  text-align: center
+  position: relative
+  height: 500px
+  &:after
+    bottom: 0
+    position: absolute
+    background: inherit
+    content: " "
+    height: 100%
+    left: 0
+    right: 0
+    transform: skewY(-10deg)
+    transform-origin: 100%
+    z-index: -1
+  h2
+    margin: 80px 0
+
+
+.cards
+  display: grid
+  grid-template-columns: repeat(3, auto)
+  grid-gap: 30px
+
+.feature-card
+  background: white
+  padding: 30px 40px 10px 40px
+  box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
+
+  h3
+    margin: 10px 0 0
+
+.car
+  border-top: 4px solid $seafoam
+.shoe
+  border-top: 4px solid $purps
+.device
+  border-top: 4px solid $ocean
