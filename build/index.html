@@ -20,7 +20,11 @@
       <article>
         <h1>Main Headline</h1>
         <p>How To Write Better Advertising CopyHow To Write Better Advertising CopyHow To Write Better Advertising Copy</p>
-        <img src="assets/img/shoeAppiOS.png" alt="ShoeApp iOS">
+        <img src='assets/img/shoeAppiOS.png'
+        srcset='assets/img/shoeAppiOS.png 2000w,
+        assets/img/shoeAppiOS-small.png 1000w'
+        sizes='(min-width: 960px) 960px,
+               100vw'/>
       </article>
     </div>
   </section>
@@ -64,7 +68,13 @@
   <section id="discount">
     <div class="wrapper">
       <div class="discountLayout">
-        <img src="assets/img/twoPhones.png" alt="Shoe App Rocks">
+        <picture>
+          <source media='(min-width: 681px)'
+                  srcset='assets/img/twoPhones.png'/>
+          <source media='(max-width: 680px)'
+                  srcset='assets/img/twoPhones-one.png'/>
+          <img src='assets/img/twoPhones.png'/>
+        </picture>
         <div class="offer">
           <h2>Don't miss this offer</h2>
           <p>Business cards represent not only your business, but it also tells people your professionalism in the industry. In the business world today, the usage of business cards is far beyond just informing people who you are.</p>
@@ -97,6 +107,6 @@
   </section>
 
   <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/app.js"></script> 
 </body>
 </html>
