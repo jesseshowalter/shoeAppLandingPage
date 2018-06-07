@@ -1,1 +1,1 @@
-function showNav(){console.log("this is working");var s=document.getElementById("responsive-nav");"responsive-nav"===s.className?s.className+=" unfold":s.className="responsive-nav"}
+var navButton=document.getElementById("nav-toggle-button");function toggleNavDisplay(t){t.preventDefault(),document.getElementById("responsive-nav").classList.toggle("showNav")}navButton.addEventListener("click",toggleNavDisplay);
